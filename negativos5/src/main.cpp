@@ -6,7 +6,14 @@ const int SIZE = 5; // input size.
 
 int main(void)
 {
-    // TODO: Adicione aqui seu código.
-
+    int aux = 0;
+    int n;
+    for(int i = 0; i < SIZE;i++){
+        std::cin >> n;
+        if(n < 0){
+            aux++;
+        }
+    }
+    std::cout << aux << '\n';
     return 0;
 }
